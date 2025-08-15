@@ -18,7 +18,7 @@ export function FeaturesSection() {
          <div className="grid grid-cols-3 grid-rows-3 gap-4">
              {
                  FEATURES.map((feature, index) =>(
-                     <Card key={index} size={feature.size} className={` bg-slate-800/50 backdrop-blur-sm border border-slate-700 shadow-lg hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 group cursor-pointer overflow-hidden relative ${GRID_CLASS[index]}`}>
+                     <Card key={index} className={` bg-slate-800/50 backdrop-blur-sm border border-slate-700 shadow-lg hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 group cursor-pointer overflow-hidden relative ${GRID_CLASS[index]}`}>
                        <div
                          className={`w-12 h-12 lg:w-16 lg:h-16 rounded-2xl ${feature.color} border flex items-center justify-center mx-auto group-hover:scale-110 group-hover:rotate-6 transition-all duration-500`}
                        >

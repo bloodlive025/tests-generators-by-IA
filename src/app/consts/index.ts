@@ -7,42 +7,36 @@ export const FEATURES: Feature[] = [
         title: "Generación Automática con IA",
         description: "Crea exámenes basados en tus materiales de curso utilizando inteligencia artificial avanzada.",
         color: "bg-blue-500/20 text-blue-400 border-blue-500/30",
-        size: "large" as const,
       },
       {
         icon: Clock,
         title: "Ahorro de Tiempo",
         description: "Reduce el tiempo de creación de exámenes en un 90%.",
         color: "bg-emerald-500/20 text-emerald-400 border-emerald-500/30",
-        size: "small" as const,
       },
       {
         icon: FileText,
         title: "Múltiples Formatos",
         description: "Opción múltiple, verdadero/falso, preguntas abiertas, ensayos y más.",
         color: "bg-purple-500/20 text-purple-400 border-purple-500/30",
-        size: "small" as const,
       },
       {
         icon: Database,
         title: "Banco de Preguntas Inteligente",
         description: "Reutiliza y organiza automáticamente tu contenido. Construye una biblioteca que mejora con cada uso.",
         color: "bg-amber-500/20 text-amber-400 border-amber-500/30",
-        size: "small" as const,
       },
       {
         icon: Palette,
         title: "Personalización",
         description: "Adapta el diseño y formato a tu institución.",
         color: "bg-pink-500/20 text-pink-400 border-pink-500/30",
-        size: "small" as const,
       },
       {
         icon: BarChart3,
         title: "Análisis y Estadísticas",
         description: "Reportes detallados del rendimiento estudiantil con insights accionables.",
         color: "bg-indigo-500/20 text-indigo-400 border-indigo-500/30",
-        size: "large" as const,
       }
 ]
 
