@@ -1,6 +1,44 @@
+"use client"
 import { Sparkles, Zap, Users } from "lucide-react"
+import { useState, useEffect } from 'react';
 
 export function HeroSection() {
+  const [text, setText] = useState('Minutos');
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const words = ['En Minutos', 'No en Horas'];
+
+  useEffect(() => {
+    const typeSpeed = 150;
+    const deleteSpeed = 100;
+    const pauseTime = 2000;
+
+    const type = () => {
+      const currentWord = words[currentIndex];
+      
+      if (isDeleting) {
+        // Borrando
+        setText(prev => prev.slice(0, -1));
+        if (text === '') {
+          setIsDeleting(false);
+          setCurrentIndex((prev) => (prev + 1) % words.length);
+        }
+      } else {
+        // Escribiendo
+        if (text === currentWord) {
+          // Pausa antes de borrar
+          setTimeout(() => setIsDeleting(true), pauseTime);
+          return;
+        }
+        setText(currentWord.slice(0, text.length + 1));
+      }
+    };
+
+    const timer = setTimeout(type, isDeleting ? deleteSpeed : typeSpeed);
+    return () => clearTimeout(timer);
+  }, [text, isDeleting, currentIndex, words]);
+
   return (
     <section
       id="inicio"
@@ -11,15 +49,17 @@ export function HeroSection() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="font-heading font-bold text-4xl lg:text-6xl text-white leading-tight">
-                Crea Exámenes Profesionales en <span className="text-blue-400">Minutos</span>, No en Horas
+                Crea Exámenes Profesionales {' '}
+                <span className="text-blue-400">
+                  {text}
+                </span>
               </h1>
               <p className="text-lg lg:text-xl text-slate-300 leading-relaxed max-w-2xl">
                 Genera automáticamente exámenes personalizados con IA. Ahorra tiempo, mejora la calidad educativa y
                 enfócate en lo que realmente importa: enseñar.
               </p>
             </div>
-        </div>           
-
+          </div>           
 
           <div className="relative">
             <div className="grid grid-cols-3 grid-rows-3 gap-4 h-80">
