@@ -1,6 +1,7 @@
 "use client"
 import { Button } from "@/app/components/ui/Button"
 import { GraduationCap} from "lucide-react"
+import Link from "next/link"
 
 export function Header() {
   return (
@@ -12,6 +13,19 @@ export function Header() {
           </div>
           <span className="font-heading font-bold text-xl text-slate-900">ExamGen</span>
         </div>
+
+        <nav className="hidden md:flex items-center gap-8">
+          <Link href="#inicio" className="text-slate-600 hover:text-blue-600 transition-colors">
+            Inicio
+          </Link>
+          <Link href="#features" className="text-slate-600 hover:text-blue-600 transition-colors">
+            Características
+          </Link>
+          <Link href="#precios" className="text-slate-600 hover:text-blue-600 transition-colors">
+            Precios
+          </Link>
+        </nav>
+
 
         <div className="flex items-center gap-3">
           <Button className="bg-blue-600 hover:bg-blue-700 text-white">Iniciar Sesión</Button>
