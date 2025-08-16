@@ -11,7 +11,7 @@ export function FeaturesSection() {
              Características que Transforman tu Enseñanza
            </h2>
            <p className="text-lg text-slate-300 max-w-3xl mx-auto">
-             Herramientas poderosas diseñadas específicamente para educadores modernos que buscan eficiencia sin
+             Herramienta poderosa diseñada específicamente para educadores modernos que buscan eficiencia sin
              comprometer la calidad.
            </p>
          </div>
