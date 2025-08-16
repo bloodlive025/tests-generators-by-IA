@@ -11,3 +11,13 @@ export interface CardProps {
   children: React.ReactNode;
   className?: string;
 }
+
+export interface CardExamenProps {
+  id: string;
+  title: string;
+  date: string;
+  type: string;
+  isSelected?: boolean;
+  onClick?: () => void;
+  className?: string;
+}

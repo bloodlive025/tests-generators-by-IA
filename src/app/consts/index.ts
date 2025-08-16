@@ -1,4 +1,4 @@
-import {Brain , Clock, FileText, Database, Palette, BarChart3, Users, Building} from "lucide-react"
+import {Brain , Clock, FileText, Database, Palette, BarChart3, Users, Building , Plus , Search , BookOpen , Menu } from "lucide-react"
 import { Feature } from "@/app/types/types";
 
 export const FEATURES: Feature[] = [
@@ -70,6 +70,22 @@ export const BENEFICIES = [
   }
 ]
 
+export const SIDEBAR_OPTIONS = [
+  { icon: Plus, label: "Nuevo Examen", primary: true },
+  { icon: Search, label: "Buscar Exámenes", primary: true },
+  { icon: BookOpen, label: "Biblioteca PDF", primary: true },
+]
+
+export const RECENTS_EXAMENS = [ //sIMULACION DE LOS EXAMENES - LUEGO ELIMINAR
+  { id: "1", title: "Examen de Matemáticas - Álgebra", date: "2 horas", type: "Matemáticas" },
+    { id: "2", title: "Evaluación Historia Universal", date: "1 día", type: "Historia" },
+    { id: "3", title: "Quiz Biología Celular", date: "3 días", type: "Ciencias" },
+    { id: "4", title: "Examen Programación Python", date: "1 semana", type: "Tecnología" },
+    { id: "5", title: "Evaluación Literatura Española", date: "1 semana", type: "Literatura" },
+    { id: "6", title: "Quiz Química Orgánica", date: "2 semanas", type: "Ciencias" },
+    { id: "7", title: "Examen Inglés Intermedio", date: "2 semanas", type: "Idiomas" },
+    { id: "8", title: "Evaluación Física Mecánica", date: "3 semanas", type: "Ciencias" },
+]
 
 export const GRID_CLASS = [
   "col-span-2",
