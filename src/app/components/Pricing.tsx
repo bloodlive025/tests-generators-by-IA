@@ -1,5 +1,6 @@
 import { Button } from "@/app/components/ui/Button"
 import { Check, X } from "lucide-react"
+import Link from "next/link"
 
 export function PricingSection() {
   return (
@@ -47,9 +48,11 @@ export function PricingSection() {
                   </li>
                 </ul>
 
-                <Button className="w-full bg-slate-700 hover:bg-slate-600 text-white border border-slate-600">
-                  Comenzar Gratis
-                </Button>
+                <Link href="/login">
+                  <Button className="w-full bg-slate-700 hover:bg-slate-600 text-white border border-slate-600">
+                    Comenzar Gratis
+                  </Button>
+                </Link>
               </div>
             </div>
 

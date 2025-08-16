@@ -1,9 +1,9 @@
-"use client"
 import { Button } from "@/app/components/ui/Button"
 import { GraduationCap} from "lucide-react"
 import Link from "next/link"
 
 export function Header() {
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
@@ -28,7 +28,9 @@ export function Header() {
 
 
         <div className="flex items-center gap-3">
-          <Button className="bg-blue-600 hover:bg-blue-700 text-white">Iniciar Sesión</Button>
+          <Link href="/login">
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white">Iniciar Sesión</Button>
+          </Link>
         </div>
       </div>
     </header>
