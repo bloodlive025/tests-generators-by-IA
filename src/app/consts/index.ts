@@ -1,4 +1,4 @@
-import {Brain , Clock, FileText, Database, Palette, BarChart3, Users, Building , Plus , Search , BookOpen , Menu } from "lucide-react"
+import {Brain , Clock, FileText, Database, Palette, BarChart3, Users, Building , Plus , Search , BookOpen} from "lucide-react"
 import { Feature } from "@/app/types/types";
 
 export const FEATURES: Feature[] = [
@@ -86,6 +86,37 @@ export const RECENTS_EXAMENS = [ //sIMULACION DE LOS EXAMENES - LUEGO ELIMINAR
     { id: "7", title: "Examen Inglés Intermedio", date: "2 semanas", type: "Idiomas" },
     { id: "8", title: "Evaluación Física Mecánica", date: "3 semanas", type: "Ciencias" },
 ]
+
+export const SPECIFIC_GRADES = {
+  primaria: [
+    { value: "1", label: "1er Grado" },
+    { value: "2", label: "2do Grado" },
+    { value: "3", label: "3er Grado" },
+    { value: "4", label: "4to Grado" },
+    { value: "5", label: "5to Grado" },
+    { value: "6", label: "6to Grado" },
+  ],
+  secundaria: [
+    { value: "1", label: "1er Año" },
+    { value: "2", label: "2do Año" },
+    { value: "3", label: "3er Año" },
+    { value: "4", label: "4to Año" },
+    { value: "5", label: "5to Año" },
+  ]
+}
+
+export const GRADES = [
+  { value: "primaria", label: "Primaria" },
+  { value: "secundaria", label: "Secundaria" }
+]
+
+export const QUESTION_TYPES = [
+  { value: "con-aleternativas", label: "Marcar (Preguntas con alternativas"} ,
+  { value: "verdadero-falso", label: "Verdadero/Falso" },
+  { value: "resolver", label: "Resolver (Preguntas Abiertas)" },
+  { value: "ambas", label: "Ambas" },
+]
+
 
 export const GRID_CLASS = [
   "col-span-2",
