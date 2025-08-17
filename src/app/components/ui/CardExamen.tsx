@@ -1,5 +1,5 @@
 import { CardExamenProps } from "@/app/types/types";
-import { FileQuestion } from "lucide-react";
+import { FileText } from "lucide-react";
 
 export function CardExamen({ 
   id, 
@@ -23,7 +23,7 @@ export function CardExamen({
         <div className={`w-8 h-8 rounded-lg bg-blue-500/20 border border-blue-500/30 flex items-center justify-center flex-shrink-0 ${
           isSelected ? "bg-blue-500/30 border-blue-500/50" : ""
         }`}>
-          <FileQuestion className="w-4 h-4 text-blue-400" />
+          <FileText className="w-4 h-4 text-blue-400" />
         </div>
         <div className="flex-1 min-w-0">
           <p className="text-sm font-medium text-white truncate">{title}</p>
